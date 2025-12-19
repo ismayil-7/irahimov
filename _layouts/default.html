@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    {% include navbar.html %}
+    <main>
+        {{ content }}
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ismayil Rahimov. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/ismayilrahimov" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.codecademy.com/profiles/ismayilrahimov" target="_blank" aria-label="Codecademy"><i class="fab fa-codecademy"></i></a>
+                </div>
+                <p><a href="https://github.com/ismayilrahimov/portfolio" target="_blank">View Source on GitHub</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
